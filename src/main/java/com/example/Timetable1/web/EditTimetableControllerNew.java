@@ -26,7 +26,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.ArrayList;
 
 @RestController
-@RequestMapping("/teachers")
+//@RequestMapping("/teachers")
 public class EditTimetableControllerNew {
 
     private EditTimetableRepository editTimetableRepository;
@@ -66,7 +66,6 @@ public class EditTimetableControllerNew {
     public Iterable<EditTimetable> getAllTeachers() {
         System.out.println("HomeController.getAllTacos");
         return editTimetableRepository.findAll();
-
     }
 
     @GetMapping("/find")

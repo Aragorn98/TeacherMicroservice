@@ -12,12 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class RegistrationController {
   
   private TeacherRepository teacherRepo;
-  private PasswordEncoder passwordEncoder;
 
   public RegistrationController(
-          TeacherRepository teacherRepo, PasswordEncoder passwordEncoder) {
+          TeacherRepository teacherRepo) {
     this.teacherRepo = teacherRepo;
-    this.passwordEncoder = passwordEncoder;
+//    this.passwordEncoder = passwordEncoder;
   }
   
   @GetMapping
